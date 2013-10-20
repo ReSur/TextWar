@@ -1,6 +1,5 @@
 TextWar
 =======
-_________________________
 a javascript game by TEXT  
 [http://tucao.1992s.com](http://tucao.1992s.com)
 
