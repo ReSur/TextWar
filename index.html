@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>◢★◣&nbsp;-&nbsp;吐槽战机&nbsp;-&nbsp;用微博的每个字来射击敌人</title>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=792982145" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+<div class="start">
+	<div class="span-up"></div>
+	<div class="start-content">
+		<div class="start-setting">
+			<div class="planes">
+				<div class="plane0105">
+					<span class="wing-left01">▆</span>
+					<span class="space">★</span>
+					<span class="wing-right01">▆</span>
+				</div>
+				<div class="plane0204">
+					<span class="wing-left02">▇</span>
+					<span class="space">★</span>
+					<span class="wing-right02">▇</span>
+				</div>
+				<div class="plane-center">
+					<span class="wing-left03">◢</span>
+					<input type="text" id="player-text" maxlength="1" value="★" onchange="playerChange()" />
+					<span class="wing-right03">◣</span>
+				</div>
+				<div class="plane0204">
+					<span class="wing-left04">▁</span>
+					<span class="space">★</span>
+					<span class="wing-right04">▁</span>
+				</div>
+				<div class="plane0105">
+					<span class="wing-left05">▃</span>
+					<span class="space">★</span>
+					<span class="wing-right05">▃</span>
+				</div>
+			</div>
+			<div class="change-wing">
+				<div>
+					&nbsp;
+				</div>
+				<div class="wing-up" onclick="wingChange(1)">
+					↑
+				</div>
+				<div>
+					&nbsp;
+				</div>
+				<div class="wing-down" onclick="wingChange(plane_num - 1)">
+					↓
+				</div>
+			</div>
+		</div>
+		<div id="wb_connect"><img src="images/wb_connect.gif" alt="微博登录开始吐槽" /></div>
+	</div>
+	<div class="span-down"></div>
+</div>
+<div class="end">
+	<div class="span-up"></div>
+	<div class="end-content">
+		<div class="your-score"></div>
+		<div class="replay" onclick="replay()">REPLAY</div>
+		<div id="wb_publish" ><img src="images/wb_publish.gif" alt="分享你的槽值" /></div>
+	</div>
+	<div class="span-down"></div>
+</div>
+<div class="panel">
+	<ul>
+		<li>槽值：<div class="caozi"><div class="caozi-score"></div></div></li>
+	</ul>
+</div>
+<div class="game-margin"></div>
+<div class="game">
+	<ul class="list">
+		<li><div id="draw-here">loading...</div></li>
+	</ul>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="draw.js"></script>
+<script type="text/javascript" src="sns.js"></script>
+<script type="text/javascript" src="control.js"></script>
+<script type="text/javascript" src="ai.js"></script>
+<script type="text/javascript" src="workflow.js"></script>
+<script type="text/javascript" src="layout.js"></script>
+<script type="text/javascript" src="http://1992s.com/wp-content/themes/portfolio-press-child/js/info.js"></script>
+</body>
+</html>

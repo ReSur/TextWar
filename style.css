@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 12px/18px Helvetica,Arial,sans-serif;
+	text-align: center;
+	background: url("images/bg.jpg") repeat;
+}
+.game-margin {
+	height:20px;
+}
+.game {
+	display: table;
+	padding: 0px;
+	margin: 0 auto;
+	color: #00393B;
+	background-color: white;
+	border: 5px solid;
+	border-radius: 16px;
+	border-color: #999;
+}
+.game li {
+	display: inherit;
+}
+
+.plane0204 {
+	filter:alpha(opacity=30);
+	-moz-opacity: 0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.3;
+}
+.plane0105 {
+	filter:alpha(opacity=10);
+	-moz-opacity: 0.1;
+	-khtml-opacity: 0.1;
+	opacity: 0.1;
+}
+.planes {
+	float: left;
+}
+.change-wing {
+	float: right;
+}
+.replay {
+	margin-top: 20px;
+}
+.start-content, .end-content {
+	padding: 50px 0 55px;
+	background: rgba(201,205,213,0.3);
+}
+.start-setting {
+	width: 240px;
+	margin: 0 auto;
+}
+.panel {
+	position:absolute;
+	z-index: 1;
+	display: none;
+	padding: 2px 20px 13px 20px;
+	color: white;
+	background: #00393B;
+	border-radius: 0  0 20px 20px;
+	filter:alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+.panel li {
+	display: inline;
+}
+.caozi {
+	width: 100px;
+	height: 12px;
+	border: 1px solid white;
+	border-radius: 2px;
+}
+.caozi-score {
+	width: 0px;
+	height:12px;
+	background: white;
+}
+.start {
+	z-index: 998;
+}
+.end {
+	display: none;
+	top: -1000px;	/* refer page.js */
+	z-index: 999;
+}
+.start, .end {
+	position: absolute;
+	width: 100%;
+	margin: 60px auto;
+	color: #00393B;
+}
+.space, #player-text {
+	width: 50px;
+}
+.start-content, .plane-center input, .end-content {
+	font-size: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.plane-center input {
+	color: #004056;
+}
+.plane-center input:hover {
+	color: red;
+}
+.wing-up:hover, .wing-down:hover, .replay:hover {
+	color: #005A79;
+}
+.start .turn-red, .end .turn-red {
+	color: red;
+}
+.plane0204 {
+	font-size: 30px;
+}
+.plane0105 {
+	font-size: 20px;
+}
+.game, .panel, .start, .end {
+	cursor: default;
+}
+.replay, .wing-up, .wing-down {
+	cursor: pointer;
+}
+.span-up {
+	margin-bottom: 20px;
+}
+.left-span, .right-span {
+	float: left;
+	width: 0;
+	height: 0;
+}
+.span-up .left-span, .span-up .right-span {
+	border-bottom: 20px solid rgba(201,205,213,0.3);
+}
+.span-down .left-span, .span-down .right-span {
+	border-bottom: 10px solid transparent;
+}
+.span-up .left-span {
+	border-left: 200px solid transparent;
+}
+.span-down .left-span {
+	border-left :200px solid rgba(201,205,213,0.3);
+}
+.span-up .right-span {
+	border-right: 200px solid transparent;
+}
+.span-down .right-span {
+	border-right: 200px solid rgba(201,205,213,0.3);
+}
+.span-up-trapezoid, .span-down-trapezoid, .span-up-triangle, .span-down-triangle {
+	float: left;
+	width: 0px;
+}
+.span-up-triangle, .span-down-triangle {
+	height: 0px;
+	border-right: 0 solid transparent;
+}
+#wb_connect, #wb_connect_btn {
+	font-size: 12px;
+	clear: both;
+}
